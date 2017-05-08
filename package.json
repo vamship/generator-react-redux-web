@@ -5,7 +5,8 @@
   "homepage": "https://github.com/vamship/generator-react-redux-web#readme",
   "author": "Vamshi K Ponnapalli <vamshi.ponnapalli@gmail.com>",
   "files": [
-    "generators"
+    "generators",
+    "utils"
   ],
   "main": "generators/index.js",
   "keywords": [
