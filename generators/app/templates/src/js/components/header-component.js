@@ -5,7 +5,6 @@ import eventUtils from '../utils/event-utils';
 import routes from '../routes';
 
 const _homePath = routes.home.getPath();
-const _loginPath = routes.login.getPath();
 const _logoutPath = routes.logout.getPath();
 
 /**
@@ -46,9 +45,6 @@ class HeaderComponent extends React.Component {
                      <div className="absolute static-l menu-container w-100 w-50-m bg-primary right-0 tl-m">
                        <Link onClick={ this.onNavLinkClick } className="bg-primary text-primary bb bn-l b-primary fw5 db dib-l pv2 pv0-l pr3 ph3-m dim" to={ _homePath }>
                          Home
-                       </Link>
-                       <Link onClick={ this.onNavLinkClick } className="bg-primary text-primary bb bn-l b-primary fw5 db dib-l pv2 pv0-l pr3 ph3-m dim" to={ _loginPath }>
-                         Login
                        </Link>
                        <Link onClick={ this.onNavLinkClick } className="bg-primary text-primary bb bn-l b-primary fw5 db dib-l pv2 pv0-l pr3 ph3-m dim" to={ _logoutPath }>
                          Log Out
