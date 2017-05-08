@@ -1,0 +1,34 @@
+<svg
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     width="420"
+     height="100">
+  <g transform="translate(251.27789306640625,234.75003051757812) scale(0.7649999856948853) ">
+    <g transform="translate(-315.0326843261719,-291.5032653808594) scale(1.3887335062026978) ">
+      <rect width="72" height="18" fill="#000000" />
+      <rect
+            y="27.007"
+            width="27"
+            height="45.001"
+            fill="#000000" />
+      <rect
+            x="36"
+            y="27.006"
+            width="36"
+            height="45"
+            fill="#000000" />
+    </g>
+  </g>
+  <g transform="translate(251.27789306640625,234.75003051757812) scale(0.7649999856948853) ">
+    <g class="logo-entity-inner">
+      <text
+            font-size="80px"
+            fill="#000000"
+            font-family="Montserrat"
+            y="-219.66667"
+            x="-190">
+        <%= websiteTitle %>
+      </text>
+    </g>
+  </g>
+</svg>

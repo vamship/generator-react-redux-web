@@ -1,0 +1,60 @@
+/**
+ * Define SVG icons for the apps, using app themes to apply colors to the SVG
+ * file.
+ */
+@import './theme.css';
+
+@svg-load menu_icon url('./svg/menu-icon.svg') {
+    path {
+        fill: var(--theme-accent);
+    }
+}
+
+@svg-load close_icon url('./svg/close-icon.svg') {
+    path {
+        stroke: var(--theme-accent);
+    }
+}
+
+@svg-load logo url('./svg/logo.svg') {
+    g:nth-child(1) > g > rect:nth-child(1) {
+        fill: var(--theme-primary-light);
+    }
+    g:nth-child(1) > g > rect:nth-child(2) {
+        fill: var(--theme-accent);
+    }
+    g:nth-child(1) > g > rect:nth-child(3) {
+        fill: var(--theme-divider);
+    }
+    g:nth-child(2) > g > text {
+        fill: var(--theme-primary-fg);
+        font-family: var(--theme-font-family);
+    }
+}
+
+@svg-load logo_dark url('./svg/logo.svg') {
+    g:nth-child(1) > g > rect:nth-child(1) {
+        fill: var(--theme-primary-light);
+    }
+    g:nth-child(1) > g > rect:nth-child(2) {
+        fill: var(--theme-accent);
+    }
+    g:nth-child(1) > g > rect:nth-child(3) {
+        fill: var(--theme-divider);
+    }
+    g:nth-child(2) > g > text {
+        fill: var(--theme-primary-dark);
+    }
+}
+
+@svg-load down_triangle url('./svg/down-triangle.svg') {
+    polygon {
+        fill: var(--theme-primary-default);
+    }
+}
+
+@svg-load spinner url('./svg/spinner.svg') {
+    rect:not(:first-child) {
+        fill: var(--theme-primary-dark);
+    }
+}

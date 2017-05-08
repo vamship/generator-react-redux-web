@@ -1,0 +1,100 @@
+/**
+ * Styles relating to header components of the web app.
+ */
+@import './svg.css';
+@import './theme.css';
+
+:root {
+  --logo-aspect-ratio: 4.2;
+
+  --logo-width: 125px;
+  --logo-height: calc(var(--logo-width)/var(--logo-aspect-ratio));
+
+  --logo-width-large: 170px;
+  --logo-height-large: calc(var(--logo-width-large)/var(--logo-aspect-ratio));
+
+  --nav-height: 44px;
+  --nav-height-large: 56px;
+}
+
+/* Main nav bar */
+.nav {
+  height: var(--nav-height);
+  line-height: var(--nav-height);
+}
+@media (--breakpoint-large) {
+  .nav {
+    height: var(--nav-height-large);
+    line-height: var(--nav-height-large);
+  }
+}
+
+/* Application logo - Header */
+.logo {
+  width: var(--logo-width);
+  height: var(--logo-height);
+  background-image: svg-inline(logo);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: var(--logo-width) var(--logo-height);
+  text-indent: -9999px;
+  margin-top: 5px;
+}
+
+@media (--breakpoint-large) {
+  .logo {
+    width: var(--logo-width);
+    height: var(--logo-height);
+    background-size: var(--logo-width) var(--logo-height);
+    margin-top: 10px;
+  }
+}
+
+/* Application logo - Login */
+.logo-login {
+  width: var(--logo-width);
+  height: var(--logo-height);
+  background-image: svg-inline(logo_dark);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: var(--logo-width) var(--logo-height);
+  text-indent: -9999px;
+  margin: 0 auto 40px auto;
+}
+
+/* Hamburger menu */
+.menu-button {
+  background-image: svg-inline(menu_icon);
+  background-position: 16px center;
+  background-repeat: no-repeat;
+  padding: 0 16px 0 47px;
+}
+
+.menu-button.open {
+    background-image: svg-inline(close_icon);
+}
+
+/* Menu and menu container */
+.menu {
+  bottom: 0;
+  top: var(--nav-height);
+  background: var(--theme-primary-light);
+}
+
+.menu .menu-container {
+  top: -100vh;
+}
+
+.menu.open .menu-container {
+  top: 0;
+}
+
+@media (--breakpoint-large) {
+  .menu {
+    top: 0;
+    box-shadow: 0 0 0 0;
+  }
+  .searchbar {
+    width: 56px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "SEPARATOR": "--------------------------------------------------------------------------------",
+    "GENERATOR_NAME": "react-redux-web",
+    "SUB_GEN_ACTION": "action",
+    "SUB_GEN_SAGA": "saga",
+    "SUB_GEN_REDUCER": "reducer",
+    "SUB_GEN_REDUX": "redux",
+    "SUB_GEN_CONTAINER": "container",
+    "SUB_GEN_COMPONENT": "component",
+    "SUB_GEN_REGEN_ACTION_INDEX": "redux-regen-action-index",
+    "SUB_GEN_REGEN_REDUCER_INDEX": "redux-regen-reducer-index",
+    "SUB_GEN_REGEN_SAGA_INDEX": "redux-regen-saga-index"
+}

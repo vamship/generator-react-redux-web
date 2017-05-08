@@ -1,0 +1,10 @@
+{
+    "plugins": [ "esformatter-jsx", "esformatter-remove-trailing-commas" ],
+    "indent": {
+        "value": "    "
+    },
+    "jsx": {
+        "attrsOnSameLineAsTag": false,
+        "maxAttrsOnTag": 3
+    }
+}

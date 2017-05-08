@@ -1,0 +1,14 @@
+/* Progress spinners */
+.spinner-small {
+    height: 24px;
+    width: 24px;
+    background-image: svg-inline(spinner);
+    background-size: contain;
+}
+
+.spinner-medium {
+    height: 32px;
+    width: 32px;
+    background-image: svg-inline(spinner);
+    background-size: contain;
+}

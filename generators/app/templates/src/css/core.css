@@ -1,0 +1,45 @@
+/**
+ * Core element styles - override styles for html elements.
+ */
+@import './svg.css';
+@import './theme.css';
+
+:root {
+    --control-height: 44px;
+}
+
+html {
+  font-family: var(--theme-font-family);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea, input, button, select { outline: none; }
+
+input, button, select {
+  height: var(--control-height);
+  line-height: var(--control-height);
+}
+
+input[type="button"], button, .btn, select {
+  box-shadow: 0 1px 3px var(--theme-divider), 0 1px 3px var(--theme-divider);
+  height: var(--control-height);
+  line-height: var(--control-height);
+  display: block;
+  text-align: center;
+}
+
+select {
+  background-image: svg-inline(down_triangle);
+  background-position: calc(100% - 20px) center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-appearance: none;
+}

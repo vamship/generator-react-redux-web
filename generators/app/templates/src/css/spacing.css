@@ -1,0 +1,11 @@
+/**
+ * Customized spacing settings for the web application.
+ */
+
+.pl20px {
+    padding-left: 20px;
+}
+
+.pr20px {
+    padding-right: 20px;
+}

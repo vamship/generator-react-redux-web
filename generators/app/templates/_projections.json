@@ -1,0 +1,35 @@
+{
+    "test/unit/*-spec.js": {
+        "alternate": "src/js/{}.js",
+        "type": "utest"
+    },
+    "src/js/*.js": {
+        "alternate": "test/unit/{}-spec.js",
+        "type": "js"
+    },
+    "src/js/redux/actions/*-actions.js": {
+        "alternate": "test/unit/actions/{}-action-spec.js",
+        "type": "action"
+    },
+    "src/js/redux/reducers/*-reducer.js": {
+        "alternate": "test/unit/reducers/{}-reducer-spec.js",
+        "type": "reducer"
+    },
+    "src/js/redux/sagas/*-sagas.js": {
+        "alternate": "test/unit/sagas/{}-saga-spec.js",
+        "type": "saga"
+    },
+    "src/js/components/*-component.js": {
+        "alternate": "test/unit/components/{}-component-spec.js",
+        "type": "component"
+    },
+    "src/js/containers/*-container.js": {
+        "alternate": "test/unit/containers/{}-container-spec.js",
+        "type": "container"
+    },
+    "src/js/pages/*-page.js": {
+        "alternate": "test/unit/pages/{}-page-spec.js",
+        "type": "page"
+    }
+
+}

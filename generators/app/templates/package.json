@@ -1,0 +1,76 @@
+{
+  "name": "<%= projectName %>",
+  "version": "0.0.1",
+  "description": "<%= projectDescription %>",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server --config .bs-config.js"
+  },
+  "keywords": [
+    "react",
+    "SPA",
+    "tachyons"
+  ],
+  "author": "<%= authorName %> <<%= authorEmail %>>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "bluebird": "^3.5.0",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-actions": "^2.0.2",
+    "redux-logger": "^3.0.1",
+    "redux-persist": "^4.7.1",
+    "redux-persist-transform-filter": "0.0.9",
+    "redux-saga": "^0.15.1",
+    "shortid": "^2.2.8",
+    "tachyons": "^4.7.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.8",
+    "browserify-css": "^0.10.1",
+    "browserify-middleware": "^7.1.0",
+    "browserify-postcss": "^0.3.3",
+    "cssnano": "^3.10.0",
+    "esformatter-jsx": "^8.0.0",
+    "esformatter-remove-trailing-commas": "^1.0.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-esformatter": "^1.2.0",
+    "grunt-eslint": "^19.0.0",
+    "lite-server": "^2.3.0",
+    "load-grunt-tasks": "^3.5.2",
+    "postcss-calc": "^5.3.1",
+    "postcss-css-variables": "^0.7.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-import": "^9.1.0",
+    "postcss-inline-svg": "^2.3.0",
+    "postcss-pxtorem": "^4.0.1",
+    "react-fastclick": "^3.0.1",
+    "time-grunt": "^1.4.0",
+    "wysknd-lib": "0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= githubUsername %>/<%= projectName %>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= githubUsername %>/<%= projectName %>/issues"
+  },
+  "homepage": "https://github.com/<%= githubUsername %>/<%= projectName %>#readme"
+}

@@ -1,0 +1,46 @@
+/**
+ * Define theme colors for the web app here.
+ */
+:root {
+    --theme-primary-dark: #5D4037;
+    --theme-primary-default: #795548;
+    --theme-primary-light: #D7CCC8;
+    --theme-primary-fg: #FFFFFF;
+
+    --theme-accent: #FF5722;
+    --theme-primary-text: #212121;
+    --theme-secondary-text: #757575;
+
+    --theme-divider: #BDBDBD;
+
+    --theme-font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-primary {
+    background: var(--theme-primary-default);
+}
+.b-primary {
+    border-color: var(--theme-primary-light);
+}
+.b-primary-dark {
+    border-color: var(--theme-primary-dark);
+}
+.b-divider {
+    border-color: var(--theme-divider);
+}
+.b-accent {
+    border-color: var(--theme-accent);
+}
+
+.text-primary {
+    color: var(--theme-primary-fg);
+}
+.text-accent {
+    color: var(--theme-accent);
+}
+.text-secondary {
+    color: var(--theme-secondary-text);
+}
+.text-fade {
+    color: var(--theme-divider);
+}
