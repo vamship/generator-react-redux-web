@@ -2,12 +2,8 @@
   "name": "generator-react-redux-web",
   "version": "0.0.1",
   "description": "Generates a project structure for a react/redux single page app. Sub generators allow you to add additional components during development",
-  "homepage": "",
-  "author": {
-    "name": "Vamshi K Ponnapalli",
-    "email": "vamshi.ponnapalli@gmail.com",
-    "url": ""
-  },
+  "homepage": "https://github.com/vamship/generator-react-redux-web#readme",
+  "author": "Vamshi K Ponnapalli <vamshi.ponnapalli@gmail.com>",
   "files": [
     "generators"
   ],
@@ -46,10 +42,19 @@
       "mocha": true
     }
   },
-  "repository": "vamship/generator-react-redux-web",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamship/generator-react-redux-web.git"
+  },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vamship/generator-react-redux-web/issues"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
