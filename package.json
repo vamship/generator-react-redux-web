@@ -1,6 +1,6 @@
 {
   "name": "generator-react-redux-web",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generates a project structure for a react/redux single page app. Sub generators allow you to add additional components during development",
   "homepage": "https://github.com/vamship/generator-react-redux-web#readme",
   "author": "Vamshi K Ponnapalli <vamshi.ponnapalli@gmail.com>",
