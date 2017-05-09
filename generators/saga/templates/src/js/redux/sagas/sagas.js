@@ -12,7 +12,7 @@ const { DO_SOMETHING, DO_SOMETHING_IN_PROGRESS, DO_SOMETHING_SUCCEEDED, DO_SOMET
 function* doSomething(action) {
     const {doSomething} = action.payload;
 
-    const inProgress = yield select(state => state.<%= saga%>>.inProgress);
+    const inProgress = yield select(state => state.<%= saga%>.doSomethingInProgress);
 
     if (inProgress) {
         return;
