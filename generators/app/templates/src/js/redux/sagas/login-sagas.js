@@ -52,7 +52,6 @@ function* doLogout(action) {
         // TODO: Other operations could go here
         yield put(SESSION_INVALIDATED());
         yield put(LOGOUT_SUCCEEDED());
-    // yield put(REDIRECT());
     } catch (ex) {
         yield put(LOGOUT_FAILED('Logout failed. Can you check your inputs and try again?'));
     }

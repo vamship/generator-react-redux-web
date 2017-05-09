@@ -8,10 +8,6 @@ const userFilter = createFilter('user', [
     'lastName'
 ]);
 
-const navFilter = createFilter('nav', [
-    'redirectUrl'
-]);
-
 /**
  * Sets up store persistence, allowing the application state to be restored
  * even after the browser window is closed and reopened.
@@ -28,11 +24,10 @@ export default function setupPersistence(store) {
     return new Promise((resolve, reject) => {
         persistStore(store, {
             transforms: [
-                userFilter,
-                navFilter
+                userFilter
             ],
-            // Only persist the user and nav object.
-            whitelist: ['user', 'nav']
+            // Only persist the user object.
+            whitelist: ['user']
         }, (err, data) => {
             if (err) {
                 reject(err);
