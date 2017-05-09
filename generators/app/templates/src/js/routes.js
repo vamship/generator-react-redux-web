@@ -7,7 +7,7 @@ export default {
     /**
      * Home page.
      */
-    home: new UrlPathTemplate('/'),
+    home: new UrlPathTemplate('/home'),
 
     /**
      * Login page.

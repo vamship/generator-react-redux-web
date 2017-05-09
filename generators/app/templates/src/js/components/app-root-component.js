@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
-import HeaderComponent from './header-component';
 import ProtectedRouteContainer from '../containers/protected-route-container';
+import routes from '../routes';
+
+import AppComponent from '../components/app-component';
+import NotFoundComponent from '../components/not-found-component';
 import LoginContainer from '../containers/login-container';
 import LogoutContainer from '../containers/logout-container';
-import routes from '../routes';
 
 /**
  * Root component for the app.
@@ -44,7 +46,9 @@ class AppRootComponent extends React.Component {
                    <Switch>
                      <Route exact path={ `${routes.login}` } component={ LoginContainer } />
                      <Route exact path={ `${routes.logout}` } component={ LogoutContainer } />
-                     <ProtectedRouteContainer path={ `${routes.home}` } component={ HeaderComponent } />
+                     <ProtectedRouteContainer path={ `${routes.home}` } component={ AppComponent } />
+                     <Redirect from='/' to={ `${routes.home}` } />
+                     <Route path="*" component={ NotFoundComponent } />
                    </Switch>
                  </Router>
                </Provider>;
