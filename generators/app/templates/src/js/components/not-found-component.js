@@ -11,7 +11,7 @@ class NotFoundComponent extends React.Component {
     render() {
         return <div className="pt6 pb4 center measure ph3 relative">
                  <h1 className="ttu">Page Not Found</h1>
-                 <span className="f6 text-secondary">We couldn't find the page that you were looking for.</span>
+                 <span className="f6 text-secondary">We could not find the page that you were looking for.</span>
                </div>;
     }
 }

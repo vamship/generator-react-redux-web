@@ -13,7 +13,7 @@ export default {
     validateEmail: function(email) {
         if (typeof email !== 'string' || email.length <= 0) {
             return 'Email address cannot be empty';
-        } else if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/)) {
+        } else if (!email.match(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,6})+$/)) {
             return 'Invalid email address';
         }
         return '';
